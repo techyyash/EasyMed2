@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.easymed">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EasyMed">
+        <activity
+            android:name=".patient_include_family"
+            android:exported="true" />
+        <activity
+            android:name=".patient_profile"
+            android:exported="true" />
+        <activity
+            android:name=".hospital_stats"
+            android:exported="true" />
+        <activity
+            android:name=".hospital_pharmacy"
+            android:exported="true" />
+        <activity
+            android:name=".hospital_Qrcode_view"
+            android:exported="true" />
+        <activity
+            android:name=".hospital_database_connection"
+            android:exported="true" />
+        <activity
+            android:name=".hospital_profile"
+            android:exported="true" />
+        <activity
+            android:name=".patient_home"
+            android:exported="true" />
+        <activity
+            android:name=".hospital_home"
+            android:exported="true" />
+        <activity
+            android:name=".login_patient"
+            android:exported="true" />
+        <activity
+            android:name=".login_hospital"
+            android:exported="true" />
+        <activity
+            android:name=".home"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

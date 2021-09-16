@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".hospital_pharmacy">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pharmacy_hospital_home_card"
+        android:layout_width="409dp"
+        android:layout_height="214dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006">
+
+        <ImageView
+
+            android:id="@+id/image_pharmacy_hospital"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pharmacylogo" />
+
+
+        <TextView
+            android:id="@+id/hospital_pharmacy_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/delius_unicase"
+            android:text="PHARMACY"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold|italic" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/pharmacy_text1"
+        android:layout_width="277dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/delius_unicase"
+        android:text="check the medicine details by its name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pharmacy_hospital_home_card"
+        app:layout_constraintVertical_bias="0.06" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pharmacy_hospital_search_card"
+        android:layout_width="259dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488">
+
+
+        <EditText
+            android:id="@+id/med_name_given_by_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:fontFamily="@font/delius_unicase"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:text="PARACETAMOL"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/med_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/delius_unicase"
+        android:text="NAME"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pharmacy_text1"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/med_cost_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/delius_unicase"
+        android:text="PRICE"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/med_name_label"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <TextView
+        android:id="@+id/med_stock_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/delius_unicase"
+        android:text="STOCK"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/med_cost_label"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <TextView
+        android:id="@+id/med_sold_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/delius_unicase"
+        android:text="SOLD"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/med_stock_label"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <TextView
+        android:id="@+id/med_price_value"
+        android:layout_width="149dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:fontFamily="@font/delius_unicase"
+        android:text="2000.00"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toEndOf="@+id/med_cost_label"
+        app:layout_constraintTop_toBottomOf="@+id/pharmacy_text1"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <TextView
+        android:id="@+id/med_stock_value"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:fontFamily="@font/delius_unicase"
+        android:text="2,100"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toEndOf="@+id/med_stock_label"
+        app:layout_constraintTop_toBottomOf="@+id/med_price_value"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/med_sold_value"
+        android:layout_width="147dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:fontFamily="@font/delius_unicase"
+        android:text="500"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/med_sold_label"
+        app:layout_constraintTop_toBottomOf="@+id/med_stock_value"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/med_name_value"
+        android:layout_width="170dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:fontFamily="@font/delius_unicase"
+        android:text="PARACETAMOL"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/med_price_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toEndOf="@+id/med_name_label"
+        app:layout_constraintTop_toBottomOf="@+id/pharmacy_text1"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <ImageView
+        android:id="@+id/image_search_logo"
+        android:layout_width="83dp"
+        android:layout_height="91dp"
+        app:layout_constraintBottom_toTopOf="@+id/med_name_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pharmacy_text1"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/searchlogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

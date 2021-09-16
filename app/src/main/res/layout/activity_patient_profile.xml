@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".patient_profile">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profile_patient_home_card"
+        android:layout_width="404dp"
+        android:layout_height="250dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006">
+
+
+        <ImageView
+
+            android:id="@+id/image_patient_extract"
+            android:layout_width="230dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profilelogo" />
+
+
+        <TextView
+            android:id="@+id/patient_name_extract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/delius_unicase"
+            android:text="PATIENT NAME"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="69dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_patient_home_card"
+        app:layout_constraintVertical_bias="0.631"
+        app:srcCompat="@drawable/mobilelogo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="68dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_patient_home_card"
+        app:layout_constraintVertical_bias="0.88"
+        app:srcCompat="@drawable/locationlogo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="68dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_patient_home_card"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/maillogo1" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="67dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_patient_home_card"
+        app:layout_constraintVertical_bias="0.701"
+        app:srcCompat="@drawable/genderlogo1" />
+
+    <Button
+        android:id="@+id/update_patient_profile"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_corner"
+        android:text="UPDATE"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.471" />
+
+
+    <EditText
+        android:id="@+id/patient_phone_no_extract"
+        android:layout_width="225dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:fontFamily="@font/delius_unicase"
+        android:inputType="phone"
+        android:text="8217858859"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/hospital_location_extract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/profile_patient_home_card"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <EditText
+        android:id="@+id/staff_patient_extract"
+        android:layout_width="217dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:fontFamily="@font/allan"
+        android:inputType="textEmailAddress"
+        android:text="sahil@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/hospital_who_status_extract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/profile_patient_home_card"
+        app:layout_constraintVertical_bias="0.882" />
+
+    <EditText
+        android:id="@+id/hospital_location_extract"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:fontFamily="@font/delius_unicase"
+        android:inputType="textMultiLine"
+        android:text="14/5 Kashi Temple Street, Vijay Nagar Bangalore"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/staff_patient_extract"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/profile_patient_home_card"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <EditText
+        android:id="@+id/hospital_who_status_extract"
+        android:layout_width="217dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:fontFamily="@font/delius_unicase"
+        android:inputType="textPersonName"
+        android:text="MALE"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/profile_patient_home_card"
+        app:layout_constraintVertical_bias="0.711" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
