@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 17, 2021 at 04:09 PM
+-- Generation Time: Sep 18, 2021 at 11:03 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -48,6 +48,17 @@ CREATE TABLE `hospital` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `hospital_login`
+--
+
+CREATE TABLE `hospital_login` (
+  `username` varchar(10) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `patient`
 --
 
@@ -71,6 +82,17 @@ CREATE TABLE `patient_desc` (
   `patient_desc` varchar(30) DEFAULT NULL,
   `doctor_id` varchar(10) DEFAULT NULL,
   `doctor_name` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `patient_login`
+--
+
+CREATE TABLE `patient_login` (
+  `username` varchar(10) DEFAULT NULL,
+  `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
